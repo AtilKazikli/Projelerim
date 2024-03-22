@@ -1,0 +1,240 @@
+<header class="header has-sticky">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="/">
+                <img class="img-fluid" src="https://www.avis.com.tr/assets/img/avis-logo.svg" width="164" height="50" alt="Avis Araç Kiralama & Rent a Car Logo" />
+            </a>
+
+            <div class="d-flex align-items-center d-lg-none">
+                    <a href="tel:444 28 47" class="navbar-mobile-toggle">
+                        <i class="icon icon-call"></i>
+                    </a>
+
+                        <a href="/hesap/giris" class="navbar-mobile-toggle">
+                            <i class="icon icon-user"></i>
+                        </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false">
+                    <i class="icon icon-hamburger-menu"></i>
+                </button>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar">
+                <form class="search-form-mobile d-lg-none" id="searchFormMobile" action="/arama" method="post">
+                    <div class="form-item">
+                        <input class="form-control" type="text" name="keyword" placeholder="Avis’te Ara ..." maxlength="200">
+                        <button class="btn-submit" type="submit">
+                            <i class="icon icon-search"></i>
+                        </button>
+                    </div>
+                </form>
+                <ul class="navbar-nav mr-auto">
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" target="_self"  href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Rezervasyon Y&#246;netimi</a>
+                                <div class="dropdown-menu">
+                                            <a class="dropdown-item" target="_self" href="/arac-kiralama-rezervasyon-yonetimi" >Rezervasyon İptal / G&#252;ncelleme</a>
+                                            <a class="dropdown-item" target="_self" href="/nasil-rezervasyon-yaparsin" >Nasıl Rezervasyon Yaparsınız?</a>
+                                            <a class="dropdown-item" target="_self" href="/neden-uye-olmalisin" >Neden &#220;ye Olmalısınız?</a>
+                                            <a class="dropdown-item" target="_self" href="/iletisim-bilgileri" >İletişim</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" target="_self"  href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Ara&#231;lar</a>
+                                <div class="dropdown-menu">
+                                            <a class="dropdown-item" target="_self" href="/kiralik-araba" >T&#252;m Kiralık Ara&#231;lar</a>
+                                            <a class="dropdown-item" target="_self" href="/ekonomik-kiralik-arac" >Ekonomik Ara&#231;lar</a>
+                                            <a class="dropdown-item" target="_self" href="/konfor-kiralik-arac" >Konfor Ara&#231;lar</a>
+                                            <a class="dropdown-item" target="_self" href="/prestijli-kiralik-arac" >Prestij Ara&#231;lar</a>
+                                            <a class="dropdown-item" target="_self" href="/premium-luks-kiralik-arac" >Premium Ara&#231;lar</a>
+                                            <a class="dropdown-item" target="_self" href="/luks-kiralik-araclar" >L&#252;ks Ara&#231;lar</a>
+                                            <a class="dropdown-item" target="_self" href="/van-kiralik-araclar" >Van Ara&#231;lar</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" target="_self"  href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Kampanyalar</a>
+                                <div class="dropdown-menu">
+                                            <a class="dropdown-item" target="_self" href="/arac-kiralama-kampanyalari" >Avis Kampanyaları</a>
+                                            <a class="dropdown-item" target="_self" href="/avis-isbirligi-kampanyalari" >Avis İş Birliği Kampanyaları</a>
+                                            <a class="dropdown-item" target="_self" href="/avis-kurumsal-kampanyalari" >Kurumsal Kampanyalar</a>
+                                            <a class="dropdown-item" target="_self" href="/avis-caravan-kampanyalari" >Avis Caravan Kampanyaları</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" target="_self"  href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Ofisler</a>
+                                <div class="dropdown-menu">
+                                            <a class="dropdown-item" target="_self" href="/arac-kiralama" >Şehir Ofisleri</a>
+                                            <a class="dropdown-item" target="_self" href="/havalimani-arac-kiralama" >Havalimanı Ofisleri</a>
+                                            <a class="dropdown-item" target="_self" href="/caravan-kiralama" >Avis Caravan Ofisleri</a>
+                                            <a class="dropdown-item" target="_self" href="/avis-yaninda-ofisleri" >Avis Yanında Ofisleri</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" target="_self"  href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Hizmetler</a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                            <a class="dropdown-item" target="_self" href="/filo-kiralama" >Uzun D&#246;nem Filo Kiralama</a>
+                                            <a class="dropdown-item" target="_self" href="/kurumsal-kisa-donem-arac-kiralama" >Kurumsal Ara&#231; Kiralama</a>
+                                            <div class="dropdown-item dropdown">
+                                                <a class="dropdown-item" target="_self"  href="/bireysel-arac-kiralama"><span>Bireysel Kiralama</span><i class="icon icon-plus  dropdown-toggle" data-toggle="dropdown"></i></a>
+                                                <div class="dropdown-menu">
+                                                        <a class="dropdown-item" target="_self" href="/avis-aylik-kiralama" >Aylık Kiralama</a>
+                                                </div>
+                                            </div>
+                                            <a class="dropdown-item" target="_self" href="/soforlu-arac-kiralama-transfer" >Şof&#246;rl&#252; Ara&#231; Kiralama ve Transfer</a>
+                                            <a class="dropdown-item" target="_self" href="/avis-yaninda" >Avis Yanında</a>
+                                            <div class="dropdown-item dropdown">
+                                                <a class="dropdown-item" target="_self"  href="/karavan-kiralama"><span>Avis Caravan</span><i class="icon icon-plus  dropdown-toggle" data-toggle="dropdown"></i></a>
+                                                <div class="dropdown-menu">
+                                                        <a class="dropdown-item" target="_self" href="/avis-karavan-kiralama" >Avis Caravan &#199;eşitleri</a>
+                                                </div>
+                                            </div>
+                                            <a class="dropdown-item" target="_self" href="/e-bike-kiralama-kosullari" >E-bike – Elektrikli Bisiklet</a>
+                                            <a class="dropdown-item" target="_self" href="/avis-green" >Avis Green</a>
+                                            <div class="dropdown-item dropdown">
+                                                <a class="dropdown-item" target="_self"  href="/avis-tam-destek-hizmeti"><span>Avis Tam Destek Hizmeti</span><i class="icon icon-plus  dropdown-toggle" data-toggle="dropdown"></i></a>
+                                                <div class="dropdown-menu">
+                                                        <a class="dropdown-item" target="_self" href="/teknik-gostergeler" >Teknik G&#246;stergeler S&#246;zl&#252;ğ&#252;</a>
+                                                </div>
+                                            </div>
+                                            <a class="dropdown-item" target="_blank" href="https://one.avisworld.com/tr_TR/AvisTurkey" rel="noreferrer">Yurt Dışı Kiralama</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" target="_self"  href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">&#220;r&#252;nler &amp; G&#252;venceler</a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                            <a class="dropdown-item" target="_self" href="/arac-kiralama-ek-urun-aciklamalari" >Ek &#220;r&#252;nler</a>
+                                            <a class="dropdown-item" target="_self" href="/arac-kiralama-guvence-paketleri" >G&#252;vence Paketleri</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://www.avisfilo.com/">Filo Kiralama</a>
+                            </li>
+
+                            <li class="nav-item dropdown login-dropdown">
+                                <a class="nav-link d-none d-lg-flex dropdown-toggle login-dropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span>&#220;ye Girişi</span>
+                                    <i class="icon icon-sign-in"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-login dropdown-menu-right">
+
+<form action="/Account/LoginUser" class="primary-form" data-loader="true" data-toggle="primaryForm" id="loginForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="us1eilfyeAKneWCyF-gRnUMyzNzE1Hrqy4FOwnj64oCkcncKWPPUFGiVv1t8HGRytxk_7dVFOJeZiHRwKsxfhrFZ0AMDJdkgGpbDbxbfQFo1" />                                        <input type="hidden" value="/?gad_source=1&amp;gclid=CjwKCAiA04arBhAkEiwAuNOsInmZuc7Bb3yh_2BROqn5b-M2FAecnkJYiPPzqUyMuVfNykk_G8GSfRoCCsUQAvD_BwE" name="ReturnUrl">
+                                        <div data-toggle="membershipTypeSelect" data-recording-disable>
+                                            <ul class="nav primary-tab" role="tablist">
+                                                <li class="tab-item" role="presentation">
+                                                    <a class="tab-link active" data-toggle="tab" data-value="Individual" href="#membershipType1Header">Bireysel</a>
+                                                </li>
+                                                <li class="tab-item" role="presentation">
+                                                    <a class="tab-link" data-toggle="tab" data-value="Corporate" href="#membershipType2Header">Kurumsal</a>
+                                                </li>
+                                            </ul>
+
+                                            <input type="hidden" value="Individual" name="membershipType" data-toggle="membershipType">
+
+
+                                            <div class="form-group">
+                                                <label for="email" class="field-desc">E-Posta *</label>
+                                                <input class="form-control required email" type="email" id="email" name="email" data-msg-required="Bu alan boş bırakılamaz." data-msg-emailAddress="Ge&#231;ersiz e-posta adresi." maxlength="50">
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="d-flex align-items-center">
+                                                    <label for="dropdownPassword" class="field-desc">Şifre *</label>
+                                                    <div class="password-links ml-auto">
+                                                        <div class="tab-pane fade active show" data-item="membershipType1Header">
+                                                            <a class="btn btn-link ml-auto mb-2" href="/hesap/sifre-sifirla">
+                                                                <span>ŞİFREMİ UNUTTUM</span>
+                                                                <i class="icon icon-arrow-right"></i>
+                                                            </a>
+                                                        </div>
+                                                        <div class="tab-pane fade" data-item="membershipType2Header">
+                                                            <a class="btn btn-link ml-auto mb-2" href="/hesap/kurumsal-sifre-sifirla">
+                                                                <span>ŞİFREMİ UNUTTUM</span>
+                                                                <i class="icon icon-arrow-right"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="has-icon" data-toggle="showPassword">
+                                                    <input class="form-control required" type="password" id="dropdownPassword" name="password" data-msg-required="Bu alan boş bırakılamaz." data-msg-emailAddress="Ge&#231;ersiz e-posta adresi.">
+                                                    <div class="form-control-icon">
+                                                        <i class="icon icon-eye" data-toggle="btn"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="form-footer">
+                                                <div class="row align-items-center">
+                                                    <div class="col-11">
+                                                        <div class="form-icheck d-flex align-items-center mb-0">
+                                                            <div>
+                                                                <input class="primary-icheck" name="rememberMe" id="rememberMe" type="checkbox" value="rememberMe">
+                                                            </div>
+                                                            <label class="consent-label" for="rememberMe">BENİ HATIRLA</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-13 d-flex">
+                                                        <button class="btn btn-rounded medium ml-auto" type="submit" disabled>
+                                                            <span class="loading-text">BEKLEYİNİZ...</span>
+                                                            <span>OTURUM A&#199;</span>
+                                                            <i class="icon icon-arrow-right"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+</form>
+                                    <div class="form-card-footer tab-content">
+                                        <div class="tab-pane fade show active" id="membershipType1Header">
+                                            <b class="title">Avis hesabınız yok mu ?</b>
+                                            <a href="/hesap/bireysel-uye-ol?ReturnUrl=/?gad_source=1&amp;gclid=CjwKCAiA04arBhAkEiwAuNOsInmZuc7Bb3yh_2BROqn5b-M2FAecnkJYiPPzqUyMuVfNykk_G8GSfRoCCsUQAvD_BwE" class="btn btn-link">
+                                                <span>Avis’e &#220;ye Olun</span>
+                                                <i class="icon icon-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                        <div class="tab-pane fade" id="membershipType2Header">
+                                            <b class="title">Kurumsal mod&#252;l kullanarak işlemlerinizi ger&#231;ekleştirmek i&#231;in m&#252;şterimiz olun!</b>
+                                            <a href="/kurumsal-kisa-donem-arac-kiralama" class="btn btn-link">
+                                                <span>Kurumsal m&#252;şterimiz olmak i&#231;in formu doldurun</span>
+                                                <i class="icon icon-arrow-right"></i>
+                                            </a>
+                                            <div class="form-link">
+                                                Kurumsal müşterimizseniz, kurumsal modül şifrenizi almak için <a href="mailto:aviskurumsalsatis@avis.com.tr">aviskurumsalsatis@avis.com.tr</a>&rsquo;ye mail atabilirsiniz.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+                                            <li class="dropdown d-none d-lg-flex">
+                            <div class="search-form">
+                                <button class="btn-search" type="button" data-toggle="dropdown">
+                                    <i class="icon icon-search"></i>
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <form class="d-flex align-items-center" id="searchFormDesktop" action="/arama" method="post">
+                                        <i class="icon icon-search"></i>
+                                        <input class="form-control" name="keyword" type="text" placeholder="Avis’te Ara ..." maxlength="200" required>
+                                        <button class="btn btn-rounded small" type="submit">Ara</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                                                <li class="d-flex align-items-center">
+                                <a class="language-select type2" href="/en">
+                                    <span class="text">EN</span>
+                                    <img class="img-fluid" src="https://www.avis.com.tr/assets/img/language-en.png" alt="Avis" width="24" height="24">
+                                </a>
+                            </li>
+                </ul>
+            </div>
+
+            <div class="collapse w-100" id="loggedInNavbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown show">
+                        <div class="dropdown-menu show">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
