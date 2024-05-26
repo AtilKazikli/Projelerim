@@ -24,10 +24,8 @@
                         <th>Email</th>
                         <th>Tel No</th>
                         <th>Adres</th>
-                        <th>Durumu</th>
                         <th>İşlem</th>
                     </thead>
-                    <tbody class="sortable" data-url="<?php echo base_url("customers/rankSetter"); ?>">
 
                         <?php foreach($items as $item) { ?>
 
@@ -38,16 +36,6 @@
                                 <td><?php echo $item->email; ?></td>
                                 <td><?php echo $item->phone; ?></td>
                                 <td><?php echo $item->address; ?></td>
-                                <td>
-                                    <input
-                                        data-url="<?php echo base_url("customers/isActiveSetter/$item->id"); ?>"
-                                        class="isActive"
-                                        type="checkbox"
-                                        data-switchery
-                                        data-color="#10c469"
-                                        <?php echo ($item->isActive) ? "checked" : ""; ?>
-                                    />
-                                </td>
                                 <td>
                                     <button
                                         data-url="<?php echo base_url("customers/delete/$item->id"); ?>"

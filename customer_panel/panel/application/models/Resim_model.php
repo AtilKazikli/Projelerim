@@ -11,30 +11,30 @@ class Resim_model extends CI_Model {
 
     // Belirli bir resmi getiren fonksiyon
     public function get_resim_by_id($resim_id) {
-        return $this->db->get_where('resimler', array('id' => $resim_id))->row_array();
+        return $this->db->get_where('resim', array('id' => $resim_id))->row_array();
     }
 
-    // Belirli bir ilana ait resimleri getiren fonksiyon
-    public function get_resimler_by_ilan_id($ilan_id) {
-        return $this->db->get_where('resimler', array('ilan_id' => $ilan_id))->result_array();
+    // Belirli bir ilana ait resimi getiren fonksiyon
+    public function get_resim_by_ilan_id($ilan_id) {
+        return $this->db->get_where('resim', array('ilan_id' => $ilan_id))->result_array();
     }
 
     // Yeni bir resim ekleyen fonksiyon
     public function insert_resim($data) {
-        $this->db->insert('resimler', $data);
+        $this->db->insert('resim', $data);
         return $this->db->insert_id();
     }
 
     // Belirli bir resmi silen fonksiyon
     public function delete_resim_by_id($resim_id) {
         $this->db->where('id', $resim_id);
-        $this->db->delete('resimler');
+        $this->db->delete('resim');
     }
 
-    // İlan ID'sine göre resimleri silen fonksiyon
-    public function delete_resimler_by_ilan_id($ilan_id) {
+    // İlan ID'sine göre resimi silen fonksiyon
+    public function delete_resim_by_ilan_id($ilan_id) {
         $this->db->where('ilan_id', $ilan_id);
-        $this->db->delete('resimler');
+        $this->db->delete('resim');
     }
 }
 

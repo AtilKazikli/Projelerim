@@ -17,19 +17,19 @@
                             </a>
                             <ul class="dropdown-menu animated flipInY">
                                 <li>
-                                    <a class="text-color" href="/index.html">
+                                <a href="<?php echo base_url("dashboard"); ?>">
                                         <span class="m-r-xs"><i class="fa fa-home"></i></span>
                                         <span>Home</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="text-color" href="profile.html">
+                                    <a class="text-color" href="#">
                                         <span class="m-r-xs"><i class="fa fa-user"></i></span>
                                         <span>Profile</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="text-color" href="settings.html">
+                                    <a class="text-color" href="#">
                                         <span class="m-r-xs"><i class="fa fa-gear"></i></span>
                                         <span>Settings</span>
                                     </a>
@@ -37,7 +37,7 @@
                                 
                                 <li role="separator" class="divider"></li>
                                 <li>
-                                    <a class="text-color" href="logout.html">
+                                <a href="<?php echo base_url("login"); ?>">
                                         <span class="m-r-xs"><i class="fa fa-power-off"></i></span>
                                         <span>Home</span>
                                     </a>
@@ -54,25 +54,24 @@
         <div class="menubar-scroll-inner">
             <ul class="app-menu">
 
-
                 <li>
-                    <a href="javascript:void(0)">
+                    <a href="<?php echo base_url("Dashboard"); ?>">
                         <i class="menu-icon zmdi zmdi-view-dashboard zmdi-hc-lg"></i>
                         <span class="menu-text">Dashboard</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="<?php echo base_url("vehicles"); ?>">
+                    <a href="<?php echo base_url("Users"); ?>">
                         <i class="menu-icon fa fa-cubes"></i>
-                        <span class="menu-text">Araç</span>
+                        <span class="menu-text">Kullanıcılar</span>
                     </a>
                 </li>
 
                 <li>
                     <a href="<?php echo base_url("customers"); ?>">
                         <i class="menu-icon fa fa-cubes"></i>
-                        <span class="menu-text">Müşteri</span>
+                        <span class="menu-text">Müşteriler</span>
                     </a>
                 </li>
 
@@ -86,21 +85,14 @@
                 <li>
                     <a href="<?php echo base_url("sales"); ?>">
                         <i class="menu-icon fa fa-cubes"></i>
-                        <span class="menu-text">Satış</span>
+                        <span class="menu-text">Satışlar</span>
                     </a>
                 </li>
 
                 <li>
                     <a href="<?php echo base_url("reservations"); ?>">
                         <i class="menu-icon fa fa-cubes"></i>
-                        <span class="menu-text">Rezervasyon</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="<?php echo base_url("login"); ?>">
-                        <i class="menu-icon fa fa-cubes"></i>
-                        <span class="menu-text">Login</span>
+                        <span class="menu-text">Rezervasyonlar</span>
                     </a>
                 </li>
 
@@ -111,35 +103,9 @@
                     </a>
                 </li>
 
-                <li>
-                    <a href="<?php echo base_url("Kullanici_Controller"); ?>">
-                        <i class="menu-icon fa fa-cubes"></i>
-                        <span class="menu-text">Kullanıcı Sayfası</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="<?php echo base_url("MessageController"); ?>">
-                        <i class="menu-icon fa fa-cubes"></i>
-                        <span class="menu-text">Mesaj</span>
-                    </a>
-                </li>
                 
-                <li>
-                    <a href="javascript:void(0)">
-                        <i class="menu-icon zmdi zmdi-lamp zmdi-hc-lg"></i>
-                        <span class="menu-text">Popup Hizmeti</span>
-                    </a>
-                </li>
-
 
                 <li>
-                    <a href="documentation.html">
-                        <i class="menu-icon zmdi zmdi-view-web zmdi-hc-lg"></i>
-                        <span class="menu-text">Ana Sayfa</span>
-                    </a>
-                </li>
-
             </ul><!-- .app-menu -->
         </div><!-- .menubar-scroll-inner -->
     </div><!-- .menubar-scroll -->

@@ -107,7 +107,6 @@ class Adverts extends CI_Controller
         }
     }
 
-    // İlgili fonksiyon resim yüklemesi yapar
     private function upload_resim() {
         $config['upload_path'] = './uploads/';
         $config['allowed_types'] = 'gif|jpg|png';
@@ -126,6 +125,7 @@ class Adverts extends CI_Controller
         }
         
     }
+
     public function valid_image($resim) {
         $allowed_mime_types = array('image/jpeg', 'image/png', 'image/gif');
         $allowed_file_ext = array('jpg', 'jpeg', 'png', 'gif');
@@ -141,7 +141,6 @@ class Adverts extends CI_Controller
         return true;
     }
     
-    
     public function upload_check($resim) {
         if (empty($_FILES['resim']['name'])) {
             $this->form_validation->set_message('upload_check', 'Lütfen bir resim seçin.');
@@ -149,12 +148,6 @@ class Adverts extends CI_Controller
         }
         return true;
     }
-
-        // Başarılı ise
-            // Kayit işlemi baslar
-        // Başarısız ise
-            // Hata ekranda gösterilir...
-
     
     public function update_form($id){
 
@@ -177,8 +170,8 @@ class Adverts extends CI_Controller
 
     }
 
-        // adverts.php içinde add fonksiyonu
-        public function add(){
+    public function add(){
+
             $viewData = new stdClass();
         
             // İlanlar_model'deki get_all fonksiyonu kullanılarak adverts getiriliyor
@@ -220,9 +213,8 @@ class Adverts extends CI_Controller
         
             // İlan ekleme formu view'ini yükle
             $this->load->view("adverts_v/add/index", $viewData);
-        }
+    }
         
-    
     public function update($id){
 
         $this->load->library("form_validation");

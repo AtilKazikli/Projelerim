@@ -127,6 +127,7 @@ class Product extends CI_Controller
 
 
     }
+    
     public function update($name){
 
         $this->load->library("form_validation");
@@ -179,9 +180,6 @@ class Product extends CI_Controller
         }
     }
     
-
-    
-
     public function delete($id){
 
         $delete = $this->product_model->delete(

@@ -226,29 +226,5 @@ class reservations extends CI_Controller
         }
 
     }
-    public function rankSetter(){
-
-
-        $data = $this->input->post("data");
-
-        parse_str($data, $order);
-
-        $items = $order["ord"];
-
-        foreach ($items as $rank => $reservation_id){
-
-            $this->reservations_model->update(
-                array(
-                    "reservation_id"        => $reservation_id,
-                    "rank !="   => $rank
-                ),
-                array(
-                    "rank"      => $rank
-                )
-            );
-
-        }
-
-    }
 
 }

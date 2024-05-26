@@ -69,7 +69,7 @@ class Adverts_model extends CI_Model
     public function add_form()
     {
     // İlan ekleme formunu içeren HTML'i yükleyerek geri döndür
-    return $this->load->view("adverts_v/add_form/index", null, true);
+    return $this->load->view("adverts_v/add/index", null, true);
     }
 
 

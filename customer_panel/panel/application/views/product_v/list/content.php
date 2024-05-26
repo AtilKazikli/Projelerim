@@ -24,10 +24,7 @@
                         <th>Url</th>
                         <th>Açıklama</th>
                         <th>Durumu</th>
-                        <th>İşlem</th>
                     </thead>
-                    <tbody class="sortable" data-url="<?php echo base_url("product/rankSetter"); ?>">
-
                         <?php foreach($items as $item) { ?>
 
                             <tr id="ord-<?php echo $item->id; ?>">
@@ -36,16 +33,6 @@
                                 <td><?php echo $item->name; ?></td>
                                 <td><?php echo $item->url; ?></td>
                                 <td><?php echo $item->description; ?></td>
-                                <td>
-                                    <input
-                                        data-url="<?php echo base_url("product/isActiveSetter/$item->id"); ?>"
-                                        class="isActive"
-                                        type="checkbox"
-                                        data-switchery
-                                        data-color="#10c469"
-                                        <?php echo ($item->isActive) ? "checked" : ""; ?>
-                                    />
-                                </td>
                                 <td>
                                     <button
                                         data-url="<?php echo base_url("product/delete/$item->id"); ?>"

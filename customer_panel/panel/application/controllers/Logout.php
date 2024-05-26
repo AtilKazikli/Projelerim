@@ -8,10 +8,14 @@ class Logout extends CI_Controller {
     }
 
     public function index() {
-        // Oturumu sonlandır
-        $this->session->unset_userdata('user_id'); // Kullanıcı oturum bilgisini siler
+        $this->logout();
+    }
 
-        // Oturum sonlandıktan sonra başka bir sayfaya yönlendirme yapabilirsiniz
-        redirect('home'); // Örnek olarak, kullanıcıyı anasayfaya yönlendiriyoruz
+    public function logout() {
+        // Oturumu sonlandır
+        $this->session->unset_userdata('id');
+        // Başarılı çıkış sonrası yönlendirme yapabilirsiniz
+        redirect('login'); // Örnek olarak, kullanıcıyı giriş sayfasına yönlendiriyoruz
     }
 }
+?>

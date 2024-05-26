@@ -8,37 +8,33 @@ class Kullanici_model extends CI_Model {
         $this->load->database();
     }
 
-    public function get_kullanicilar() {
-        return $this->db->get('kullanicilar')->result_array();
-    }
-
-    public function insert_kullanici($data) {
-        return $this->db->insert('kullanicilar', $data);
-    }
-
-    public function delete_kullanici($id) {
-        $this->db->where('id', $id);
-        return $this->db->delete('kullanicilar');
-    }
-
-    public function get_kullanici_by_id($id) {
-        $query = $this->db->get_where('kullanicilar', array('id' => $id));
+    // E-posta ve şifre ile kullanıcıyı alır
+    public function get_kullanici_by_email_and_password($email, $password) {
+        // Şifreyi md5 ile hashliyoruz  
+        $password = md5($password);
+        $query = $this->db->get_where('users', array('email' => $email, 'password' => $password));
         return $query->row_array();
     }
 
-    public function get_kullanici_by_email($email) {
-        $query = $this->db->get_where('kullanicilar', array('email' => $email));
+    public function get_user_by_email($email) {
+        $query = $this->db->get_where('users', array('email' => $email));
         return $query->row_array();
     }
-
-    public function update_kullanici($id, $data) {
-        $this->db->where('id', $id);
-        return $this->db->update('kullanicilar', $data);
+    
+    public function add_user($name, $surname, $email, $password) { // Soyadı alanı da buraya eklendi
+        $data = array(
+            'name' => $name,
+            'surname' => $surname, // Soyadı alanı eklendi
+            'email' => $email,
+            'password' => $password
+        );
+    
+        $this->db->insert('users', $data);
+    
+        return $this->db->affected_rows() > 0;
     }
-    // Kullanici_model içinde
-    public function kullanici_ekle($kullanici_verileri) {
-        return $this->db->insert('kullanicilar', $kullanici_verileri); // Örnek olarak kullanicilar tablosuna ekliyoruz
-}
-
+    
+    
+    
 }
 ?>
