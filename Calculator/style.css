@@ -1,0 +1,253 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body{
+    align-items: center;
+    background: linear-gradient(320deg, #eb92be, #ffef78, #63c9b4);
+    display: flex;
+    font-family:'Dosis', sans-serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+
+    
+    /* 
+    - body: Bu stil kuralları, HTML belgesindeki tüm <body> öğelerini etkiler. Yani, belgenin ana gövdesini temsil eder.
+
+    - align-items: center;: Bu stil kuralları, öğelerin dikey (yukarıdan aşağıya) hizalamasını belirler. center değeri, öğelerin dikey eksende merkezlenmesini sağlar. Bu, öğelerin dikey merkezlenmesini sağlar.
+    
+    - background: linear-gradient(320deg, #eb92be, #ffef78, #63c9b4);: Bu stil kuralları, arka planı bir renk gradyanı ile doldurur. linear-gradient fonksiyonu, belirtilen renkler arasında bir renk geçişini tanımlar. 320deg açı, gradyanın yönünü belirtir. Ardışık renkler, #eb92be, #ffef78, ve #63c9b4, gradyanın farklı noktalarında belirtilir. Bu, arka planın renk geçişini sağlar.
+    
+    - display: flex;: Bu stil kuralları, <body> öğesinin içindeki öğeleri bir flex konteyneri olarak düzenler. Flex konteynerleri, içerdikleri öğeleri esnek bir düzende yönetmek için kullanılır.
+    
+    - font-family: 'Dosis', sans-serif;: Bu stil kuralları, belgedeki metinlerin fontunu belirler. İlk olarak, 'Dosis' adlı bir font kullanılır. Eğer bu font kullanılamıyorsa, genel bir sans-serif font kullanılır. Bu, belgedeki metinlerin fontunu tanımlar.
+    
+    - font-display: swap;: Bu stil kuralı, web fontlarının yüklenme ve görüntülenme davranışını belirler. swap değeri, tarayıcılar yüklenene kadar yerel bir alternatif font kullanır ve ardından web fontunu görüntüler. Bu, yazı tipi yükleme süresinde daha iyi performans sağlar.
+    
+    - height: inherit;: Bu stil kuralı, öğenin yüksekliğini, üst öğenin yüksekliğiyle aynı olacak şekilde ayarlar. Bu, belgenin yüksekliğini belirler.
+    
+    - justify-content: center;: Bu stil kuralları, öğelerin yatay (soldan sağa) hizalamasını belirler. center değeri, öğelerin yatay eksende merkezlenmesini sağlar. Bu, öğelerin yatay merkezlenmesini sağlar. 
+    */
+}
+
+.wrapper{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.30);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    flex-basis: 400px;
+    height: 540px;
+    padding: 20px 35px;
+
+
+    /* 
+    - backdrop-filter: blur(5.5px);: Bu stil kuralı, arka plana uygulanan bir bulanıklık efektini belirtir. blur(5.5px) değeri, 5.5 piksel bulanıklık uygular. Bu, arka planın bir miktar bulanıklaşmasını sağlar.
+
+    - -webkit-backdrop-filter: blur(5.5px);: Bu stil kuralı, -webkit- önekiyle, WebKit tabanlı tarayıcılarda (örneğin, Chrome, Safari) arka plana uygulanan bulanıklık efektini belirtir. Bu, farklı tarayıcılarda uyumluluk sağlamak için kullanılır.
+    
+    - border-radius: 16px;: Bu stil kuralı, öğenin kenarlarının yuvarlatılmasını belirtir. 16px değeri, kenar yarıçapının piksel cinsinden boyutunu belirler.
+    
+    - box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);: Bu stil kuralı, öğenin gölgesini belirtir. 0 yatay ofset, 4px dikey ofset, 30px yayılma ve rgba(35, 35, 35, 0.1) rengi ile gölge oluşturur. Bu, öğenin belirginlik kazanmasını sağlar.
+    
+    - color: #232323;: Bu stil kuralı, metin rengini belirtir. #232323 renk kodu, koyu gri bir metin rengini temsil eder.
+    
+    - background: rgba(255, 255, 255, 0.30);: Bu stil kuralı, arka plan rengini belirtir. rgba(255, 255, 255, 0.30) renk kodu, biraz geçirgen beyaz bir arka plan rengini temsil eder.
+    
+    - border: 1px solid rgba(255, 255, 255, 0.34);: Bu stil kuralı, kenarlık rengini ve kalınlığını belirtir. 1px kalınlıkta, solid çizgi stiline ve rgba(255, 255, 255, 0.34) renk koduna sahip bir kenarlık oluşturur.
+    
+    - flex-basis: 400px;: Bu stil kuralı, öğenin esnek temel boyutunu belirtir. 400px değeri, öğenin başlangıçta alabileceği minimum genişliği temsil eder.
+    
+    - height: 540px;: Bu stil kuralı, öğenin yüksekliğini belirtir. 540px değeri, öğenin başlangıçta alabileceği minimum yüksekliği temsil eder.
+    
+    - padding: 20px 35px;: Bu stil kuralı, öğenin iç dolgusunu belirtir. 20px üst ve alt, 35px sol ve sağ iç dolgu uygular. Bu, öğenin içeriğinin kenarlardan uzaklaştırılmasını sağlar.
+    */
+}
+
+.screen{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    font-size: 35px;
+    overflow: auto;
+    padding: 20px;
+    text-align: right;
+    width: 326px;
+
+
+    /* 
+    - backdrop-filter: blur(5.5px); ve -webkit-backdrop-filter: blur(5.5px);: Bu stil kuralları, arka plana uygulanan bir bulanıklık efektini belirtir. blur(5.5px) değeri, 5.5 piksel bulanıklık uygular. Bu, ekranın arka planını bir miktar bulanıklaştırır.
+
+    - background: rgba(255, 255, 255, 0.75);: Bu stil kuralı, ekranın arka plan rengini belirtir. rgba(255, 255, 255, 0.75) renk kodu, hafifçe geçirgen beyaz bir arka plan rengini temsil eder.
+    
+    - border: 1px solid rgba(255, 255, 255, 0.01);: Bu stil kuralı, ekranın kenarlık rengini ve kalınlığını belirtir. 1px kalınlıkta, solid çizgi stiline ve hafifçe geçirgen beyaz bir kenarlık oluşturur.
+    
+    - border-radius: 16px;: Bu stil kuralı, ekranın kenarlarının yuvarlatılmasını belirtir. 16px değeri, kenar yarıçapının piksel cinsinden boyutunu belirler.
+    
+    - box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);: Bu stil kuralı, ekranın gölgesini belirtir. 0 yatay ofset, 4px dikey ofset, 30px yayılma ve rgba(35, 35, 35, 0.1) rengi ile gölge oluşturur. Bu, ekranın bir miktar yükseltilmiş gibi görünmesini sağlar.
+    
+    - color: #232323;: Bu stil kuralı, metin rengini belirtir. #232323 renk kodu, koyu gri bir metin rengini temsil eder.
+    
+    - font-size: 35px;: Bu stil kuralı, metin boyutunu belirtir. 35px değeri, metin boyutunu piksel cinsinden belirler.
+    
+    - overflow: auto;: Bu stil kuralı, ekran içeriğinin taşması durumunda dikey kaydırma çubuğunun görünmesini sağlar. Bu, içeriğin ekran boyutunu aşması durumunda kullanıcının içeriği görebilmesini sağlar.
+    
+    - padding: 20px;: Bu stil kuralı, iç dolguyu belirtir. 20px iç dolgu, ekranın içeriğinin kenarlardan uzaklaştırılmasını sağlar.
+    
+    - text-align: right;: Bu stil kuralı, metnin sağa hizalanmasını belirtir. Bu, sayıların sağ kenara hizalanmasını sağlar, böylece sağa doğru yazıldığında düzgün bir hizalama sağlanır.
+    
+    - width: 326px;: Bu stil kuralı, ekranın genişliğini belirtir. 326px değeri, ekranın sabit bir genişlikte olmasını sağlar.
+    */
+}
+
+.calc-button-row{
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+
+
+    /* 
+    Bu CSS kodu, .calc-button-row sınıfını tanımlar ve hesap makinesi düğmelerinin sıralanmasını ve düzenini ayarlar. İşlevlerini adım adım açıklayalım:
+
+    - display: flex;: Bu stil kuralı, .calc-button-row sınıfına sahip öğelerin esnek bir düzende sıralanmasını sağlar. Bu, içeriğin bir flex konteyneri içinde esnek olarak düzenlenmesini sağlar.
+    
+    - justify-content: space-between;: Bu stil kuralı, öğelerin yatay (soldan sağa) hizalanmasını belirtir. space-between değeri, öğeler arasındaki boşluğu eşit olarak dağıtır, böylece öğeler soldan ve sağdan eşit uzaklıkta olur.
+    
+    - margin: 5% 0;: Bu stil kuralı, .calc-button-row sınıfına sahip öğelerin dış boşluğunu belirtir. 5% değeri, üst ve alt kenarlıkların yüzde cinsinden genişliğini belirtir. 0 değeri, sol ve sağ kenarlıkların genişliğini belirtir ve hiçbir boşluk bırakmaz.
+    
+    Bu stil kuralları, .calc-button-row sınıfını stilize ederek, hesap makinesi düğmelerinin yatay olarak esnek bir düzende ve aralarında eşit boşluklarla sıralanmasını sağlar. 
+    Bu, düğmelerin düzenli bir şekilde yerleştirilmesini ve ekran boyutlarına göre esnek bir şekilde ayarlanmasını sağlar.
+    */
+}
+
+.calc-button{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255,255,255, 00.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    flex-basis: 20%;
+    font-family: inherit;
+    font-size: 24px;
+    height: 65px;
+
+
+    /* 
+    - backdrop-filter: blur(5.5px); ve -webkit-backdrop-filter: blur(5.5px);: Bu stil kuralları, düğmelerin arka planına uygulanan bir bulanıklık efektini belirtir. blur(5.5px) değeri, 5.5 piksel bulanıklık uygular. Bu, düğmelerin arka planını bir miktar bulanıklaştırır.
+
+    - background: rgba(255, 255, 255, 0.75);: Bu stil kuralı, düğmenin arka plan rengini belirtir. rgba(255, 255, 255, 0.75) renk kodu, hafifçe geçirgen beyaz bir arka plan rengini temsil eder.
+    
+    - border: 1px solid rgba(255, 255, 255, 0.1);: Bu stil kuralı, düğmenin kenarlık rengini ve kalınlığını belirtir. 1px kalınlıkta, solid çizgi stiline ve hafifçe geçirgen beyaz bir kenarlık oluşturur.
+    
+    - border-radius: 16px;: Bu stil kuralı, düğmenin kenarlarının yuvarlatılmasını belirtir. 16px değeri, kenar yarıçapının piksel cinsinden boyutunu belirler.
+    
+    - box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);: Bu stil kuralı, düğmenin gölgesini belirtir. 0 yatay ofset, 4px dikey ofset, 30px yayılma ve rgba(35, 35, 35, 0.1) rengi ile gölge oluşturur. Bu, düğmenin bir miktar yükseltilmiş gibi görünmesini sağlar.
+    
+    - color: #232323;: Bu stil kuralı, düğme metninin rengini belirtir. #232323 renk kodu, koyu gri bir metin rengini temsil eder.
+    
+    - flex-basis: 20%;: Bu stil kuralı, düğmenin esnek temel boyutunu belirtir. 20% değeri, düğmenin başlangıçta alabileceği minimum genişliği belirler. Hesap makinesi düğmelerinin sıralanmasını kontrol eder.
+    
+    - font-family: inherit;: Bu stil kuralı, düğme metni için kalıtılmış bir yazı tipi kullanılmasını belirtir. inherit değeri, önceden belirlenmiş bir üst öğe yazı tipini devralır.
+    
+    - font-size: 24px;: Bu stil kuralı, düğme metni için metin boyutunu belirtir. 24px değeri, metin boyutunu piksel cinsinden belirler.
+    
+    - height: 65px;: Bu stil kuralı, düğmenin yüksekliğini belirtir. 65px değeri, düğmenin başlangıçta alabileceği minimum yüksekliği belirler.
+    
+    - Bu stil kuralları, .calc-button sınıfını stilize ederek, hesap makinesi düğmelerine yuvarlatılmış köşeler, gölge, arka plan bulanıklığı ve uygun boyutlandırma gibi özellikler kazandırır. 
+    */
+}
+
+.calc-button:last-child{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255,255,255, 00.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    background: #d72880;
+
+
+    /* 
+    - Bu CSS kodu, .calc-button sınıfına sahip son öğeyi hedef alır ve onun stiline özel bir stil ekler.
+
+    - .calc-button:last-child seçicisi, .calc-button sınıfına sahip öğelerin içinden sadece son öğeyi seçer.
+    
+    - Ardından, bu seçilen son öğeye özel olarak aşağıdaki stil kuralları uygulanır:
+    
+    - backdrop-filter: blur(5.5px); ve -webkit-backdrop-filter: blur(5.5px);: Arka plana uygulanan bir bulanıklık efektini belirtir. blur(5.5px) değeri, 5.5 piksel bulanıklık uygular.
+    
+    - background: rgba(255, 255, 255, 0.75); ve background: #d72880;: Arka plan rengini belirler. İlk satır, hafifçe geçirgen beyaz bir arka plan rengi tanımlar. İkinci satır ise, sadece son düğmenin arka plan rengini belirler ve #d72880 renk koduyla bir pembe tonunu temsil eder.
+    
+    - border: 1px solid rgba(255,255,255, 00.1);: Kenarlık rengini ve kalınlığını belirtir. 1px kalınlıkta, solid çizgi stiline ve hafifçe geçirgen beyaz bir kenarlık oluşturur.
+    
+    - border-radius: 16px;: Kenar yarıçapını belirtir ve yuvarlatılmış kenarlara sahip bir düğme oluşturur.
+    
+    - box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);: Düğmenin gölgesini belirtir. 0 yatay ofset, 4px dikey ofset, 30px yayılma ve rgba(35, 35, 35, 0.1) rengi ile gölge oluşturur.
+    
+    - color: #232323;: Metin rengini belirtir. #232323 renk kodu, koyu gri bir metin rengini temsil eder.
+    
+    - Bu stil kuralları, .calc-button sınıfına sahip son öğeyi özel olarak stilize ederek, son düğmeye özel bir arka plan rengi verir ve diğer özellikleri korur.
+    */
+}
+
+.calc-button:last-child:hover{
+    background-color: inherit;
+    color: inherit;
+
+
+    /* 
+    Bu CSS kodu, .calc-button sınıfına sahip son öğenin üzerine gelindiğinde (:hover durumunda) arka plan rengini ve metin rengini kalıtılmış (inherit) olarak ayarlar.
+
+    - background-color: inherit;: Bu stil kuralı, üzerine gelindiğinde son düğmenin arka plan rengini, üst öğeden (inherit) alır. Yani, son düğmenin üzerine gelindiğinde arka plan rengi, daha önce belirlenmiş olan arka plan rengini kullanır.
+    
+    - color: inherit;: Bu stil kuralı, üzerine gelindiğinde son düğmenin metin rengini, üst öğeden (inherit) alır. Yani, son düğmenin üzerine gelindiğinde metin rengi, daha önce belirlenmiş olan metin rengini kullanır.
+    
+    Bu stil kuralları, .calc-button sınıfına sahip son öğenin ( yani 0 için )üzerine gelindiğinde arka plan rengini ve metin rengini kalıtılmış olarak almasını sağlar. Bu, üzerine gelindiğinde düğmenin renklerinin değişmemesini ve önceden belirlenmiş stilin korunmasını sağlar. 
+    */
+}
+
+.calc-button:hover{
+    background-color: inherit;
+}
+
+.calc-button:active{
+    background-color: #ffef78;
+}
+
+.double{
+    flex-basis: 47%;
+}
+
+.triple{
+    flex-basis: 73%;
+}
+
+/* 
+.calc-button:hover: Bu stil kuralı, hesap makinesi düğmelerinin üzerine gelindiğinde (:hover durumunda) arka plan rengini kalıtılmış (inherit) olarak ayarlar. Yani, düğme üzerine gelindiğinde, düğmenin arka plan rengi, üst öğeden (inherit) alınır.
+
+.calc-button:active: Bu stil kuralı, hesap makinesi düğmeleri aktif olduğunda (:active durumunda), yani düğmeye tıklandığında arka plan rengini belirli bir renge (#ffef78) ayarlar. Bu, düğmeye basıldığında kullanıcıya geri bildirim sağlar.
+
+.double: Bu stil kuralı, .calc-button sınıfına sahip düğmelerin esnek temel boyutunu belirler. .double sınıfına sahip düğmelerin genişliği %47 olarak ayarlanır. Bu, düğmelerin yarı esnek bir genişliğe sahip olmasını sağlar.
+
+.triple: Bu stil kuralı, .calc-button sınıfına sahip düğmelerin esnek temel boyutunu belirler. .triple sınıfına sahip düğmelerin genişliği %73 olarak ayarlanır. Bu, düğmelerin daha geniş bir yarı esnek genişliğe sahip olmasını sağlar. 
+*/
